@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const Color ifoodPurpleLight = Color(0xFFF2EFFF);
     const Color ifoodGray = Color(0xFF999999);
 
+    // O Scaffold é a estrutura base da tela (esqueleto), com uma AppBar customizada, corpo com scroll e uma BottomNavigationBar
     return Scaffold(
       backgroundColor: Colors.white,
       // --- Início da AppBar Customizada ---
@@ -67,6 +68,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       decoration: const BoxDecoration(color: ifoodPurpleLight, shape: BoxShape.circle),
                       child: const Icon(Icons.diamond, color: ifoodPurple, size: 24),
                     ),
+
+                    // Espaçamento entre os ícones
                     const SizedBox(width: 12),
                     Stack(
                       children: [
